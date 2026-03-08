@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lexend:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -23,39 +23,81 @@
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">Laura Ramos</a>
+            </div>
+        </nav>
     </header>
     <main>
-        <h2>¿Demasiado bueno para ser verdad?</h2>
-        <h2>Contáctame hoy si tienes preguntas o para programar una consulta gratuita</h2>
-        <form>
-            <label for="">Nombre</label>
-            <input type="text" name="name" id="Nombre">
-            <label for="">Ciudad</label>
-            <input type="text" name="city" id="Ciudad">
-            <label for="">Correo</label>
-            <input type="email" name="email" id="Correo">
-            <label for="">consulta</label>
-            <textarea name="consulta" id="consulta"></textarea>
-            <label for="kit">Lo quiero ya!</label>
-            <select name="" id="">
-                <option value="">KIT BOARDING PASS</option>
-                <option value="">KIT FIRST CLASS</option>
-            </select>
-            <label for="send">Enviar</label>
-            <input type="checkbox" name="send" id="send">
-        </form>
-        
+       <div class="container text-center mt-5">
+
+        <div class="titulo-contacto">
+            <h1>¿Demasiado bueno para ser verdad?</h1>
+             <p>Contáctame hoy si tienes preguntas o para programar una consulta gratuita</p>
+        </div>
+
+        <div class="form-card">
+            <form>
+
+                <div class="mb-3">
+                <label>Nombre</label>
+                <input type="text" placeholder="Tu nombre">
+                </div>
+
+                <div class="mb-3">
+                <label>Ciudad</label>
+                <input type="text" placeholder="Tu ciudad">
+                </div>    
+
+                <div class="mb-3">
+                <label>Email</label>
+                <input type="email" placeholder="tu@email.com">
+                </div>
+
+                <div class="mb-3">
+                <label>Consulta</label>
+                <textarea placeholder="Escribe tu mensaje"></textarea>
+                </div>
+
+                <div class="mb-3">
+                <label for="kit" class="form-label">Lo quiero ya!</label>
+                    <select name="kit" id="kit" class="form-select">
+                        <option value="boarding">KIT BOARDING PASS</option>
+                        <option value="first">KIT FIRST CLASS</option>
+                    </select>
+                </div>
+                <div class="text-center"></div>
+                <button type="submit">Enviar mensaje</button>
+
+            </form>
+        </div>
+    
     </main>
+    
     <footer>
-        <p>© 2026 Laura Ramos. Todos los derechos reservados.</p>
-        <p>Mis redes:</p>
-        <img class="logo" src="../img/face-logo.png" alt="logo-facebook">
-        <p>LauRa_mkt</p>
-        <img class="logo" src="../img/logo-insta.jpg" alt="logo-insta">
-        <p>soylaura-mkt</p>
-        <h3>sede</h3>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3268.889176097797!2d-67.68641412424311!3d-34.98444057282022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9678174736912e2b%3A0x6cc3b433f2209af9!2sSalvador%20Calafat%20557%2C%20M5620%20Gral.%20Alvear%2C%20Mendoza!5e0!3m2!1ses!2sar!4v1769228580807!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        
+        <div class="footer-col">
+            <p>© 2026 Laura Ramos. Todos los derechos reservados.</p>
+            </div>
+
+            <div class="footer-col redes">
+             <p>Mis redes</p>
+
+            <div class="red-face">
+                <img class="logo" src="../img/face-logo.png" alt="logo-facebook">
+                <span>LauRa_mkt</span>
+            </div>
+
+            <div class="red-insta">
+                <img class="logo" src="../img/icons-instagram-64.png" alt="logo-insta">
+                <span>soylaura-mkt</span>
+            </div>
+            </div>
+
+            <div class="footer-col">
+            <h4>Sede</h4>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3268.889176097797!2d-67.68641412424311!3d-34.98444057282022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9678174736912e2b%3A0x6cc3b433f2209af9!2sSalvador%20Calafat%20557%2C%20M5620%20Gral.%20Alvear%2C%20Mendoza!5e0!3m2!1ses!2sar!4v1769228580807!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
 
     </footer>
     

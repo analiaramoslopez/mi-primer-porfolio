@@ -478,12 +478,6 @@ main{
 }
 
 
-
-
-
-}
-
-
 /* CONTACT FORM */
 
 form{
@@ -497,6 +491,140 @@ input, textarea, select{
     padding:10px;
     border-radius:6px;
     border:1px solid #ccc;
+}
+.form-contacto{
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+}
+.titulo-contacto{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.titulo-contacto h1{
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 42px;
+  color: #ffffff;
+}
+
+.titulo-contacto p{
+  font-family: "Lato", sans-serif;
+  font-size: 20px;
+  color: #ffffff;
+}
+
+.titulo-contacto h1,
+.titulo-contacto p{
+  color:white;
+  text-shadow:0 3px 8px rgba(0,0,0,0.6);
+}
+.titulo-contacto{
+    text-align:center;
+    margin-top:40px;
+    margin-bottom:30px;
+
+    background:rgba(0,0,0,0.55);
+    padding:20px;
+    border-radius:10px;
+    display:inline-block;
+}.titulo-contacto h1{
+    color:white;
+}
+
+.titulo-contacto p{
+    color:white;
+}
+body{
+  background:#f5f7fb;
+  font-family:'Poppins', sans-serif;
+}
+
+/* Card */
+.form-card{
+  max-width:420px;
+  margin:60px auto;
+  padding:30px;
+
+  background:white;
+  border-radius:12px;
+
+  box-shadow:0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* titulo */
+.form-card h2{
+  margin-bottom:20px;
+  font-weight:600;
+}
+
+/* inputs */
+.form-card input,
+.form-card textarea{
+  width:100%;
+  padding:10px 12px;
+  margin-bottom:15px;
+
+  border:1px solid #ddd;
+  border-radius:6px;
+
+  font-family:'Poppins', sans-serif;
+}
+
+/* boton */
+.form-card button{
+  width:100%;
+  padding:14px;
+
+  font-size:16px;
+  font-weight:600;
+
+  background:#8b4351;
+  color:white;
+
+  border:none;
+  border-radius:8px;
+
+  cursor:pointer;
+  transition:all .2s ease;
+
+  box-shadow:0 6px 14px rgba(139,67,81,0.35);
+}
+
+.form-card button:hover{
+  background:#74323f;
+  transform:translateY(-1px);
+  box-shadow:0 8px 18px rgba(139,67,81,0.45);
+}
+main{
+  min-height:100vh;
+
+    background-image:url("../img/htl-mdz.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    position:relative;
+}
+
+/* capa blanco y negro + oscurecer un poco */
+main::before{
+  content:"";
+  position:absolute;
+  inset:0;
+
+  background:rgba(0,0,0,0.4);
+  backdrop-filter:grayscale(100%);
+}
+
+/* para que el formulario quede encima */
+.form-card{
+  position:relative;
+  z-index:1;
 }
 
 /* FOOTER GRID */
@@ -552,8 +680,6 @@ footer iframe{
         grid-template-columns:1fr;
         text-align:center;
     }
-}
-@media (max-width:768px){
 
     .intro-texto h2{
         font-size:28px;
@@ -567,7 +693,6 @@ footer iframe{
         font-size:17px;
     }
 
-@media (max-width:768px){
 
     .about-text h1{
         font-size:32px;
@@ -577,23 +702,15 @@ footer iframe{
         font-size:16px;
     }
 
-}
-@media (max-width:768px){
-
     .about-me{
         margin:20px;
         padding:40px 20px;
     }
 
-}
-
     .products{
         grid-template-columns:1fr;
     }
-}
 
-    
-    @media (max-width:768px){
 
     footer{
         grid-template-columns:1fr;
@@ -604,10 +721,6 @@ footer iframe{
         justify-content:center;
     }
 
-}
-
-@media (max-width:768px){
-
     .intro-texto h2{
         font-size:28px;
     }
@@ -620,16 +733,10 @@ footer iframe{
         font-size:17px;
     }
 
-}
-@media (max-width:768px){
-
     .enganche{
         font-size:24px;
         padding:12px 20px;
     }
-
-}
-@media (max-width:768px){
 
     .about-me{
         flex-direction:column;
@@ -641,9 +748,6 @@ footer iframe{
         width:260px;
     }
 
-}
-@media (max-width:768px){
-
     .experiencia-grid{
         grid-template-columns:1fr;
     }
@@ -653,9 +757,6 @@ footer iframe{
         text-align:center;
     }
 
-}
-@media (max-width:768px){
-
     .formacion-grid{
         grid-template-columns:1fr;
     }
@@ -664,22 +765,15 @@ footer iframe{
         padding:50px 20px;
     }
 
-}
-@media (max-width:768px){
-
     .card-formador{
         flex-direction:column;
         text-align:center;
     }
 
-}
-@media (max-width:768px){
     .formadores-intro{
         font-size:16px;
         padding:0 15px;
     }
-}
-@media (max-width:768px){
 
     .kits{
         margin:40px 20px;
@@ -693,6 +787,47 @@ footer iframe{
     .card{
         width:100%;
     }
+    main{
+    padding:40px 20px;
+}
+
+.titulo-contacto{
+    width:100%;
+    padding:15px;
+    margin-bottom:20px;
+}
+
+.titulo-contacto h1{
+    font-size:28px;
+}
+
+.titulo-contacto p{
+    font-size:16px;
+}
+
+.form-card{
+    width:100%;
+    max-width:100%;
+    margin:20px auto;
+    padding:25px;
+}
+
+.form{
+    width:100%;
+}
+
+.input,
+.textarea,
+.select{
+    font-size:14px;
+}
+
+.button{
+    font-size:16px;
+    padding:14px;
+}
 
 }
+
+
 
